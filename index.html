@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLACKJACK GAME</title>
+</head>
+
+<Style>
+    body{
+        padding-top:40px;
+    }
+    section{
+      background-color: green;
+      font-size: 1rem; 
+      text-align: center; 
+      width:48% ;
+      height: 28rem;
+    margin-top: 3em;
+    margin: auto;
+    padding-top: 4em;
+
+     
+    }
+ 
+   h1{
+    color:yellow;
+    font-size: 2.5em;
+   }
+   .p1{
+    color: white;
+    margin-top: -30px;
+    font-size: 2em;
+    font-style: italic;
+   }
+   
+   .card{
+        padding-left: -2em;
+        padding-bottom: 1em;
+        color: white;
+        margin-top: -30px;
+        font-size: 1.5em;
+    }
+    .sum{
+        padding-left: -2em;
+        color: white;
+        margin-top: -30px;
+        font-size: 1.5em;
+    }
+   
+    button{
+        background-color: yellow;
+        color: green;
+        font-weight: bold;
+        width: 20em;
+        height:3em ;
+        
+        border: 5px;
+        
+        
+        cursor: pointer;
+        border: none;
+    }
+  
+    .btn{
+    margin-top: 10px;
+    background-color: yellow;
+        color: green;
+        font-weight: bold;
+        width: 20em;
+        height:3em ;       
+        
+        border: 5px;
+    }
+    #player-el{
+        color: white;
+    }
+</Style>
+<body>
+<section>
+    <h1>Blackjack</h1><br>
+    <p class="p1" id="message-el">want to play a round?</p><br>
+     <p class="card" id="card-el">Cards:</p><br>
+     <p class="sum" id="sum-el">Sum:</p><br>
+    <button onclick="startGame()">START GAME</button><br>
+    <button onclick="newCard()" class="btn">NEW CARD</button>
+
+     <p id='player-el'></p>
+
+</section>
+
+   
+
+   
+
+    <script src="./main.js"></script> 
+</body>
+</html>
